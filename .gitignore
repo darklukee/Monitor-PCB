@@ -1,17 +1,16 @@
-# Object files
-*.o
+# git ignore for CadSoft Eagle project
 
-# Libraries
-*.lib
-*.a
+# Schematic backups
+*.s\#*
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# Board backups
+*.b\#*
 
-# Executables
-*.exe
-*.out
-*.app
+# Libraries backups
+*.l\#*
+
+# Autorouter statistics
+*.pro
+
+# Other
+*.epf
