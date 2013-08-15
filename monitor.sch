@@ -18871,7 +18871,6 @@ Wickmann</description>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="VDD1" library="supply1" deviceset="VDD" device=""/>
 <part name="VDD2" library="supply1" deviceset="VDD" device=""/>
-<part name="VDD3" library="supply1" deviceset="VDD" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="VDD4" library="supply1" deviceset="VDD" device=""/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
@@ -18960,12 +18959,12 @@ jesli beda wolne piny to moze sie przydac</text>
 <instance part="U$2" gate="G$1" x="205.74" y="66.04"/>
 <instance part="U$3" gate="G$1" x="139.7" y="60.96"/>
 <instance part="GND16" gate="1" x="144.78" y="38.1"/>
-<instance part="U$4" gate="G$1" x="73.66" y="109.22"/>
-<instance part="U$4" gate="G$2" x="73.66" y="99.06"/>
-<instance part="U$4" gate="G$3" x="73.66" y="88.9"/>
-<instance part="U$4" gate="G$4" x="73.66" y="78.74"/>
-<instance part="U$4" gate="G$5" x="73.66" y="68.58"/>
-<instance part="U$4" gate="G$6" x="73.66" y="58.42"/>
+<instance part="U$4" gate="G$3" x="73.66" y="109.22"/>
+<instance part="U$4" gate="G$7" x="73.66" y="99.06"/>
+<instance part="U$4" gate="G$1" x="73.66" y="88.9"/>
+<instance part="U$4" gate="G$5" x="73.66" y="78.74"/>
+<instance part="U$4" gate="G$6" x="73.66" y="68.58"/>
+<instance part="U$4" gate="G$8" x="73.66" y="58.42"/>
 <instance part="U$4" gate="G$9" x="30.48" y="68.58"/>
 <instance part="GND15" gate="1" x="231.14" y="66.04"/>
 <instance part="X3" gate="G$1" x="48.26" y="132.08" rot="R180"/>
@@ -19011,6 +19010,8 @@ jesli beda wolne piny to moze sie przydac</text>
 <instance part="FRAME4" gate="G$1" x="0" y="0"/>
 <instance part="F1" gate="G$1" x="78.74" y="144.78"/>
 <instance part="D3" gate="1" x="91.44" y="137.16" rot="R90"/>
+<instance part="U$4" gate="G$2" x="73.66" y="48.26"/>
+<instance part="U$4" gate="G$4" x="73.66" y="38.1"/>
 </instances>
 <busses>
 </busses>
@@ -19136,35 +19137,35 @@ jesli beda wolne piny to moze sie przydac</text>
 <segment>
 <wire x1="58.42" y1="109.22" x2="48.26" y2="109.22" width="0.1524" layer="91"/>
 <label x="48.26" y="109.22" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="IOVL"/>
+<pinref part="U$4" gate="G$3" pin="IOVL"/>
 </segment>
 </net>
 <net name="SPI2_MISO" class="0">
 <segment>
 <wire x1="58.42" y1="88.9" x2="48.26" y2="88.9" width="0.1524" layer="91"/>
 <label x="48.26" y="88.9" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$3" pin="IOVL"/>
+<pinref part="U$4" gate="G$1" pin="IOVL"/>
 </segment>
 </net>
 <net name="SPI2_SCK" class="0">
 <segment>
 <wire x1="58.42" y1="99.06" x2="48.26" y2="99.06" width="0.1524" layer="91"/>
 <label x="48.26" y="99.06" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$2" pin="IOVL"/>
+<pinref part="U$4" gate="G$7" pin="IOVL"/>
 </segment>
 </net>
 <net name="SPI2_MOSI" class="0">
 <segment>
 <wire x1="58.42" y1="78.74" x2="48.26" y2="78.74" width="0.1524" layer="91"/>
 <label x="48.26" y="78.74" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$4" pin="IOVL"/>
+<pinref part="U$4" gate="G$5" pin="IOVL"/>
 </segment>
 </net>
 <net name="/CS" class="0">
 <segment>
 <wire x1="91.44" y1="109.22" x2="99.06" y2="109.22" width="0.1524" layer="91"/>
 <label x="93.98" y="109.22" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="IOVCC"/>
+<pinref part="U$4" gate="G$3" pin="IOVCC"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="/CS(D0)"/>
@@ -19176,7 +19177,7 @@ jesli beda wolne piny to moze sie przydac</text>
 <segment>
 <wire x1="91.44" y1="99.06" x2="99.06" y2="99.06" width="0.1524" layer="91"/>
 <label x="93.98" y="99.06" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$2" pin="IOVCC"/>
+<pinref part="U$4" gate="G$7" pin="IOVCC"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="CLK(D2)"/>
@@ -19188,7 +19189,7 @@ jesli beda wolne piny to moze sie przydac</text>
 <segment>
 <wire x1="91.44" y1="88.9" x2="99.06" y2="88.9" width="0.1524" layer="91"/>
 <label x="93.98" y="88.9" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$3" pin="IOVCC"/>
+<pinref part="U$4" gate="G$1" pin="IOVCC"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="DOUT(D3)"/>
@@ -19200,7 +19201,7 @@ jesli beda wolne piny to moze sie przydac</text>
 <segment>
 <wire x1="91.44" y1="78.74" x2="99.06" y2="78.74" width="0.1524" layer="91"/>
 <label x="93.98" y="78.74" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$4" pin="IOVCC"/>
+<pinref part="U$4" gate="G$5" pin="IOVCC"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="DIN(D1)"/>
@@ -19210,7 +19211,7 @@ jesli beda wolne piny to moze sie przydac</text>
 </net>
 <net name="I2C3_SCL" class="0">
 <segment>
-<pinref part="U$4" gate="G$6" pin="IOVL"/>
+<pinref part="U$4" gate="G$8" pin="IOVL"/>
 <wire x1="48.26" y1="58.42" x2="58.42" y2="58.42" width="0.1524" layer="91"/>
 <label x="48.26" y="58.42" size="1.778" layer="95"/>
 </segment>
@@ -19222,7 +19223,7 @@ jesli beda wolne piny to moze sie przydac</text>
 <label x="226.06" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$5" pin="IOVCC"/>
+<pinref part="U$4" gate="G$6" pin="IOVCC"/>
 <wire x1="91.44" y1="68.58" x2="99.06" y2="68.58" width="0.1524" layer="91"/>
 <label x="93.98" y="68.58" size="1.778" layer="95"/>
 </segment>
@@ -19234,14 +19235,14 @@ jesli beda wolne piny to moze sie przydac</text>
 <label x="226.06" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$6" pin="IOVCC"/>
+<pinref part="U$4" gate="G$8" pin="IOVCC"/>
 <wire x1="91.44" y1="58.42" x2="99.06" y2="58.42" width="0.1524" layer="91"/>
 <label x="93.98" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C3_SDA" class="0">
 <segment>
-<pinref part="U$4" gate="G$5" pin="IOVL"/>
+<pinref part="U$4" gate="G$6" pin="IOVL"/>
 <wire x1="58.42" y1="68.58" x2="48.26" y2="68.58" width="0.1524" layer="91"/>
 <label x="48.26" y="68.58" size="1.778" layer="95"/>
 </segment>
@@ -19509,6 +19510,13 @@ jesli beda wolne piny to moze sie przydac</text>
 <wire x1="106.68" y1="147.32" x2="139.7" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="OE" class="0">
+<segment>
+<pinref part="U$4" gate="G$9" pin="OE"/>
+<wire x1="17.78" y1="68.58" x2="10.16" y2="68.58" width="0.1524" layer="91"/>
+<label x="10.16" y="68.58" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -19541,7 +19549,6 @@ jesli beda wolne piny to moze sie przydac</text>
 </instance>
 <instance part="VDD1" gate="G$1" x="91.44" y="109.22" rot="R270"/>
 <instance part="VDD2" gate="G$1" x="22.86" y="109.22" rot="R90"/>
-<instance part="VDD3" gate="G$1" x="236.22" y="86.36" rot="R270"/>
 <instance part="P+4" gate="1" x="167.64" y="109.22" smashed="yes" rot="R90">
 <attribute name="VALUE" x="167.64" y="109.22" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -19679,10 +19686,6 @@ jesli beda wolne piny to moze sie przydac</text>
 <pinref part="U$1" gate="G$1" pin="VDO1"/>
 <pinref part="VDD2" gate="G$1" pin="VDD"/>
 </segment>
-<segment>
-<pinref part="U$1" gate="G$2" pin="VDD"/>
-<pinref part="VDD3" gate="G$1" pin="VDD"/>
-</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -19789,6 +19792,13 @@ jesli beda wolne piny to moze sie przydac</text>
 <pinref part="U$1" gate="G$1" pin="PE10"/>
 <wire x1="88.9" y1="78.74" x2="96.52" y2="78.74" width="0.1524" layer="91"/>
 <label x="96.52" y="78.74" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="OE" class="0">
+<segment>
+<pinref part="U$1" gate="G$2" pin="PE6"/>
+<wire x1="170.18" y1="99.06" x2="162.56" y2="99.06" width="0.1524" layer="91"/>
+<label x="162.56" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
