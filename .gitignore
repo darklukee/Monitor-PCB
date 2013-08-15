@@ -1,13 +1,13 @@
 # git ignore for CadSoft Eagle project
 
 # Schematic backups
-*.s\#*
+*.s#*
 
 # Board backups
-*.b\#*
+*.b#*
 
 # Libraries backups
-*.l\#*
+*.l#*
 
 # Autorouter statistics
 *.pro
