@@ -19010,8 +19010,6 @@ jesli beda wolne piny to moze sie przydac</text>
 <instance part="FRAME4" gate="G$1" x="0" y="0"/>
 <instance part="F1" gate="G$1" x="78.74" y="144.78"/>
 <instance part="D3" gate="1" x="91.44" y="137.16" rot="R90"/>
-<instance part="U$4" gate="G$2" x="73.66" y="48.26"/>
-<instance part="U$4" gate="G$4" x="73.66" y="38.1"/>
 </instances>
 <busses>
 </busses>
@@ -19471,11 +19469,6 @@ jesli beda wolne piny to moze sie przydac</text>
 <wire x1="170.18" y1="127" x2="154.94" y2="127" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="127" x2="154.94" y2="142.24" width="0.1524" layer="91"/>
 <junction x="154.94" y="142.24"/>
-</segment>
-<segment>
-<pinref part="U$2" gate="G$1" pin="V6"/>
-<wire x1="187.96" y1="68.58" x2="177.8" y2="68.58" width="0.1524" layer="91"/>
-<label x="177.8" y="68.58" size="1.4224" layer="95"/>
 </segment>
 </net>
 <net name="N$13" class="0">
