@@ -92,10 +92,10 @@
 <wire x1="49.53" y1="59.69" x2="49.53" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="49.53" y1="59.69" x2="52.07" y2="59.69" width="0.127" layer="21"/>
 <wire x1="52.07" y1="59.69" x2="52.07" y2="62.23" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="-2.54" x2="59.69" y2="-2.54" width="0.4064" layer="21"/>
-<wire x1="-6.35" y1="-2.54" x2="-6.35" y2="93.98" width="0.4064" layer="21"/>
-<wire x1="-6.35" y1="93.98" x2="59.69" y2="93.98" width="0.4064" layer="21"/>
-<wire x1="59.69" y1="-2.54" x2="59.69" y2="93.98" width="0.4064" layer="21"/>
+<wire x1="-6.33" y1="-2.22" x2="59.67" y2="-2.22" width="0.4064" layer="21"/>
+<wire x1="-6.33" y1="-2.22" x2="-6.33" y2="94.78" width="0.4064" layer="21"/>
+<wire x1="-6.33" y1="94.78" x2="59.67" y2="94.78" width="0.4064" layer="21"/>
+<wire x1="59.67" y1="-2.22" x2="59.67" y2="94.78" width="0.4064" layer="21"/>
 <pad name="P$1" x="0" y="60.96" drill="1" diameter="1.778" shape="square"/>
 <pad name="P$2" x="2.54" y="60.96" drill="1" diameter="1.778" shape="octagon"/>
 <pad name="P$3" x="0" y="58.42" drill="1" diameter="1.778" shape="octagon"/>
@@ -198,9 +198,17 @@
 <pad name="P$100" x="53.34" y="0" drill="1" diameter="1.778" shape="octagon" rot="R270"/>
 <text x="58.42" y="0" size="1.778" layer="20" rot="R90">STM32F4DISCOVERY</text>
 <pad name="P$101" x="0" y="91.44" drill="1" diameter="1.778" shape="square"/>
-<pad name="P$102" x="53.34" y="90.678" drill="1" diameter="1.778" shape="square"/>
+<pad name="P$102" x="53.34" y="91.44" drill="1" diameter="1.778" shape="square"/>
 <pad name="P$103" x="0" y="89.154" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$104" x="53.34" y="88.138" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$104" x="53.34" y="88.9" drill="1" diameter="1.778" shape="octagon"/>
+<wire x1="-1.27" y1="92.71" x2="1.27" y2="92.71" width="0.127" layer="21"/>
+<wire x1="1.27" y1="92.71" x2="1.27" y2="87.63" width="0.127" layer="21"/>
+<wire x1="1.27" y1="87.63" x2="-1.27" y2="87.63" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="87.63" x2="-1.27" y2="92.71" width="0.127" layer="21"/>
+<wire x1="52.07" y1="92.71" x2="54.61" y2="92.71" width="0.127" layer="21"/>
+<wire x1="54.61" y1="92.71" x2="54.61" y2="87.63" width="0.127" layer="21"/>
+<wire x1="54.61" y1="87.63" x2="52.07" y2="87.63" width="0.127" layer="21"/>
+<wire x1="52.07" y1="87.63" x2="52.07" y2="92.71" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -214,26 +222,26 @@
 <text x="-15.24" y="-30.48" size="1.778" layer="94">STM32F4DISCOVERY_1</text>
 <pin name="GND1" x="-33.02" y="30.48" visible="pin" length="middle"/>
 <pin name="GND2" x="30.48" y="30.48" visible="pin" length="middle" rot="R180"/>
-<pin name="VDO1" x="-33.02" y="27.94" visible="pin" length="middle"/>
-<pin name="VDO2" x="30.48" y="27.94" visible="pin" length="middle" rot="R180"/>
+<pin name="VDD1" x="-33.02" y="27.94" visible="pin" length="middle"/>
+<pin name="VDD2" x="30.48" y="27.94" visible="pin" length="middle" rot="R180"/>
 <pin name="GND3" x="-33.02" y="25.4" visible="pin" length="middle"/>
 <pin name="NRST" x="30.48" y="25.4" visible="pin" length="middle" rot="R180"/>
-<pin name="PC1/ETH_MDC" x="-33.02" y="22.86" visible="pin" length="middle"/>
+<pin name="PC1" x="-33.02" y="22.86" visible="pin" length="middle"/>
 <pin name="PC0" x="30.48" y="22.86" visible="pin" length="middle" rot="R180"/>
-<pin name="PC3/ETH_MII_TX_CLK" x="-33.02" y="20.32" visible="pin" length="middle"/>
+<pin name="PC3" x="-33.02" y="20.32" visible="pin" length="middle"/>
 <pin name="PC2" x="30.48" y="20.32" visible="pin" length="middle" rot="R180"/>
-<pin name="PA1/ETH_MII_RX_CLK" x="-33.02" y="17.78" visible="pin" length="middle"/>
-<pin name="PA0/ETH_MII_CRS" x="30.48" y="17.78" visible="pin" length="middle" rot="R180"/>
-<pin name="PA3/ETH_MII_COL" x="-33.02" y="15.24" visible="pin" length="middle"/>
-<pin name="PA2/ETH_MDIO" x="30.48" y="15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="PA1" x="-33.02" y="17.78" visible="pin" length="middle"/>
+<pin name="PA0" x="30.48" y="17.78" visible="pin" length="middle" rot="R180"/>
+<pin name="PA3" x="-33.02" y="15.24" visible="pin" length="middle"/>
+<pin name="PA2" x="30.48" y="15.24" visible="pin" length="middle" rot="R180"/>
 <pin name="PA5" x="-33.02" y="12.7" visible="pin" length="middle"/>
 <pin name="PA4" x="30.48" y="12.7" visible="pin" length="middle" rot="R180"/>
-<pin name="PA7/ETH_MII_RX_DV" x="-33.02" y="10.16" visible="pin" length="middle"/>
+<pin name="PA7" x="-33.02" y="10.16" visible="pin" length="middle"/>
 <pin name="PA6" x="30.48" y="10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="PC5/ETH_MII_RX_D1" x="-33.02" y="7.62" visible="pin" length="middle"/>
-<pin name="PC4/ETH_MII_RX_D0" x="30.48" y="7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="PB1/EETH_MII_RXD3" x="-33.02" y="5.08" visible="pin" length="middle"/>
-<pin name="PB0/ETH_MII_RXD2" x="30.48" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="PC5" x="-33.02" y="7.62" visible="pin" length="middle"/>
+<pin name="PC4" x="30.48" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="PB1" x="-33.02" y="5.08" visible="pin" length="middle"/>
+<pin name="PB0" x="30.48" y="5.08" visible="pin" length="middle" rot="R180"/>
 <pin name="GND4" x="-33.02" y="2.54" visible="pin" length="middle"/>
 <pin name="PB2" x="30.48" y="2.54" visible="pin" length="middle" rot="R180"/>
 <pin name="PE7" x="-33.02" y="0" visible="pin" length="middle"/>
@@ -245,10 +253,10 @@
 <pin name="PE13" x="-33.02" y="-7.62" visible="pin" length="middle"/>
 <pin name="PE14" x="30.48" y="-7.62" visible="pin" length="middle" rot="R180"/>
 <pin name="PE15" x="-33.02" y="-10.16" visible="pin" length="middle"/>
-<pin name="PB10/ETH_MII_RX_ER" x="30.48" y="-10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="PB11/ETH_MII_TX_EN" x="-33.02" y="-12.7" visible="pin" length="middle"/>
-<pin name="PB12/ETH_MII_TXD0" x="30.48" y="-12.7" visible="pin" length="middle" rot="R180"/>
-<pin name="PB13/ETH_MII_TXD1" x="-33.02" y="-15.24" visible="pin" length="middle"/>
+<pin name="PB10" x="30.48" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="PB11" x="-33.02" y="-12.7" visible="pin" length="middle"/>
+<pin name="PB12" x="30.48" y="-12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="PB13" x="-33.02" y="-15.24" visible="pin" length="middle"/>
 <pin name="PB14" x="30.48" y="-15.24" visible="pin" length="middle" rot="R180"/>
 <pin name="PB15" x="-33.02" y="-17.78" visible="pin" length="middle"/>
 <pin name="PD8" x="30.48" y="-17.78" visible="pin" length="middle" rot="R180"/>
@@ -285,18 +293,18 @@
 <pin name="PC13" x="33.02" y="17.78" visible="pin" length="middle" rot="R180"/>
 <pin name="PE4" x="-30.48" y="15.24" visible="pin" length="middle"/>
 <pin name="PE5" x="33.02" y="15.24" visible="pin" length="middle" rot="R180"/>
-<pin name="PE2/ETH_MII_TXD3" x="-30.48" y="12.7" visible="pin" length="middle"/>
+<pin name="PE2" x="-30.48" y="12.7" visible="pin" length="middle"/>
 <pin name="PE3" x="33.02" y="12.7" visible="pin" length="middle" rot="R180"/>
 <pin name="PE0" x="-30.48" y="10.16" visible="pin" length="middle"/>
 <pin name="PE1" x="33.02" y="10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="PB8/ETH_MII_TXD3" x="-30.48" y="7.62" visible="pin" length="middle"/>
+<pin name="PB8" x="-30.48" y="7.62" visible="pin" length="middle"/>
 <pin name="PB9" x="33.02" y="7.62" visible="pin" length="middle" rot="R180"/>
 <pin name="BOOT0" x="-30.48" y="5.08" visible="pin" length="middle"/>
 <pin name="VDD" x="33.02" y="5.08" visible="pin" length="middle" rot="R180"/>
 <pin name="PB6" x="-30.48" y="2.54" visible="pin" length="middle"/>
 <pin name="PB7" x="33.02" y="2.54" visible="pin" length="middle" rot="R180"/>
 <pin name="PB4" x="-30.48" y="0" visible="pin" length="middle"/>
-<pin name="PB5/ETH_PPS_OUT" x="33.02" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="PB5" x="33.02" y="0" visible="pin" length="middle" rot="R180"/>
 <pin name="PD7" x="-30.48" y="-2.54" visible="pin" length="middle"/>
 <pin name="PB3" x="33.02" y="-2.54" visible="pin" length="middle" rot="R180"/>
 <pin name="PD5" x="-30.48" y="-5.08" visible="pin" length="middle"/>
@@ -351,29 +359,29 @@
 <connect gate="G$1" pin="GND6" pad="P$50"/>
 <connect gate="G$1" pin="NC" pad="P$48"/>
 <connect gate="G$1" pin="NRST" pad="P$6"/>
-<connect gate="G$1" pin="PA0/ETH_MII_CRS" pad="P$12"/>
-<connect gate="G$1" pin="PA1/ETH_MII_RX_CLK" pad="P$11"/>
-<connect gate="G$1" pin="PA2/ETH_MDIO" pad="P$14"/>
-<connect gate="G$1" pin="PA3/ETH_MII_COL" pad="P$13"/>
+<connect gate="G$1" pin="PA0" pad="P$12"/>
+<connect gate="G$1" pin="PA1" pad="P$11"/>
+<connect gate="G$1" pin="PA2" pad="P$14"/>
+<connect gate="G$1" pin="PA3" pad="P$13"/>
 <connect gate="G$1" pin="PA4" pad="P$16"/>
 <connect gate="G$1" pin="PA5" pad="P$15"/>
 <connect gate="G$1" pin="PA6" pad="P$18"/>
-<connect gate="G$1" pin="PA7/ETH_MII_RX_DV" pad="P$17"/>
-<connect gate="G$1" pin="PB0/ETH_MII_RXD2" pad="P$22"/>
-<connect gate="G$1" pin="PB1/EETH_MII_RXD3" pad="P$21"/>
-<connect gate="G$1" pin="PB10/ETH_MII_RX_ER" pad="P$34"/>
-<connect gate="G$1" pin="PB11/ETH_MII_TX_EN" pad="P$35"/>
-<connect gate="G$1" pin="PB12/ETH_MII_TXD0" pad="P$36"/>
-<connect gate="G$1" pin="PB13/ETH_MII_TXD1" pad="P$37"/>
+<connect gate="G$1" pin="PA7" pad="P$17"/>
+<connect gate="G$1" pin="PB0" pad="P$22"/>
+<connect gate="G$1" pin="PB1" pad="P$21"/>
+<connect gate="G$1" pin="PB10" pad="P$34"/>
+<connect gate="G$1" pin="PB11" pad="P$35"/>
+<connect gate="G$1" pin="PB12" pad="P$36"/>
+<connect gate="G$1" pin="PB13" pad="P$37"/>
 <connect gate="G$1" pin="PB14" pad="P$38"/>
 <connect gate="G$1" pin="PB15" pad="P$39"/>
 <connect gate="G$1" pin="PB2" pad="P$24"/>
 <connect gate="G$1" pin="PC0" pad="P$8"/>
-<connect gate="G$1" pin="PC1/ETH_MDC" pad="P$7"/>
+<connect gate="G$1" pin="PC1" pad="P$7"/>
 <connect gate="G$1" pin="PC2" pad="P$10"/>
-<connect gate="G$1" pin="PC3/ETH_MII_TX_CLK" pad="P$9"/>
-<connect gate="G$1" pin="PC4/ETH_MII_RX_D0" pad="P$20"/>
-<connect gate="G$1" pin="PC5/ETH_MII_RX_D1" pad="P$19"/>
+<connect gate="G$1" pin="PC3" pad="P$9"/>
+<connect gate="G$1" pin="PC4" pad="P$20"/>
+<connect gate="G$1" pin="PC5" pad="P$19"/>
 <connect gate="G$1" pin="PD10" pad="P$42"/>
 <connect gate="G$1" pin="PD11" pad="P$43"/>
 <connect gate="G$1" pin="PD12" pad="P$44"/>
@@ -391,8 +399,8 @@
 <connect gate="G$1" pin="PE7" pad="P$25"/>
 <connect gate="G$1" pin="PE8" pad="P$26"/>
 <connect gate="G$1" pin="PE9" pad="P$27"/>
-<connect gate="G$1" pin="VDO1" pad="P$3"/>
-<connect gate="G$1" pin="VDO2" pad="P$4"/>
+<connect gate="G$1" pin="VDD1" pad="P$3"/>
+<connect gate="G$1" pin="VDD2" pad="P$4"/>
 <connect gate="G$2" pin="BOOT0" pad="P$71"/>
 <connect gate="G$2" pin="GND1" pad="P$51"/>
 <connect gate="G$2" pin="GND2" pad="P$52"/>
@@ -406,10 +414,10 @@
 <connect gate="G$2" pin="PA9" pad="P$94"/>
 <connect gate="G$2" pin="PB3" pad="P$78"/>
 <connect gate="G$2" pin="PB4" pad="P$75"/>
-<connect gate="G$2" pin="PB5/ETH_PPS_OUT" pad="P$76"/>
+<connect gate="G$2" pin="PB5" pad="P$76"/>
 <connect gate="G$2" pin="PB6" pad="P$73"/>
 <connect gate="G$2" pin="PB7" pad="P$74"/>
-<connect gate="G$2" pin="PB8/ETH_MII_TXD3" pad="P$69"/>
+<connect gate="G$2" pin="PB8" pad="P$69"/>
 <connect gate="G$2" pin="PB9" pad="P$70"/>
 <connect gate="G$2" pin="PC10" pad="P$87"/>
 <connect gate="G$2" pin="PC11" pad="P$88"/>
@@ -431,7 +439,7 @@
 <connect gate="G$2" pin="PD7" pad="P$77"/>
 <connect gate="G$2" pin="PE0" pad="P$67"/>
 <connect gate="G$2" pin="PE1" pad="P$68"/>
-<connect gate="G$2" pin="PE2/ETH_MII_TXD3" pad="P$65"/>
+<connect gate="G$2" pin="PE2" pad="P$65"/>
 <connect gate="G$2" pin="PE3" pad="P$66"/>
 <connect gate="G$2" pin="PE4" pad="P$63"/>
 <connect gate="G$2" pin="PE5" pad="P$64"/>
@@ -19620,7 +19628,7 @@ jesli beda wolne piny to moze sie przydac</text>
 </net>
 <net name="SPI2_NSS" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PB12/ETH_MII_TXD0"/>
+<pinref part="U$1" gate="G$1" pin="PB12"/>
 <wire x1="88.9" y1="68.58" x2="96.52" y2="68.58" width="0.1524" layer="91"/>
 <label x="96.52" y="68.58" size="1.778" layer="95"/>
 </segment>
@@ -19634,7 +19642,7 @@ jesli beda wolne piny to moze sie przydac</text>
 </net>
 <net name="SPI2_SCK" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PB13/ETH_MII_TXD1"/>
+<pinref part="U$1" gate="G$1" pin="PB13"/>
 <wire x1="25.4" y1="66.04" x2="17.78" y2="66.04" width="0.1524" layer="91"/>
 <label x="17.78" y="66.04" size="1.778" layer="95"/>
 </segment>
@@ -19672,11 +19680,11 @@ jesli beda wolne piny to moze sie przydac</text>
 </net>
 <net name="VDD" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VDO2"/>
+<pinref part="U$1" gate="G$1" pin="VDD2"/>
 <pinref part="VDD1" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VDO1"/>
+<pinref part="U$1" gate="G$1" pin="VDD1"/>
 <pinref part="VDD2" gate="G$1" pin="VDD"/>
 </segment>
 </net>
@@ -19768,14 +19776,14 @@ jesli beda wolne piny to moze sie przydac</text>
 </net>
 <net name="LCD_CS1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA2/ETH_MDIO"/>
+<pinref part="U$1" gate="G$1" pin="PA2"/>
 <wire x1="88.9" y1="96.52" x2="96.52" y2="96.52" width="0.1524" layer="91"/>
 <label x="96.52" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LCD_CS2" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PC4/ETH_MII_RX_D0"/>
+<pinref part="U$1" gate="G$1" pin="PC4"/>
 <wire x1="88.9" y1="88.9" x2="96.52" y2="88.9" width="0.1524" layer="91"/>
 <label x="96.52" y="88.9" size="1.778" layer="95"/>
 </segment>
@@ -19792,6 +19800,48 @@ jesli beda wolne piny to moze sie przydac</text>
 <pinref part="U$1" gate="G$2" pin="PE6"/>
 <wire x1="170.18" y1="99.06" x2="162.56" y2="99.06" width="0.1524" layer="91"/>
 <label x="162.56" y="99.06" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="B_UP" class="0">
+<segment>
+<pinref part="U$1" gate="G$2" pin="PE4"/>
+<wire x1="170.18" y1="96.52" x2="162.56" y2="96.52" width="0.1524" layer="91"/>
+<label x="162.56" y="96.52" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="B_LEFT" class="0">
+<segment>
+<pinref part="U$1" gate="G$2" pin="PE5"/>
+<wire x1="233.68" y1="96.52" x2="241.3" y2="96.52" width="0.1524" layer="91"/>
+<label x="241.3" y="96.52" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="B_OK" class="0">
+<segment>
+<pinref part="U$1" gate="G$2" pin="PE3"/>
+<wire x1="233.68" y1="93.98" x2="241.3" y2="93.98" width="0.1524" layer="91"/>
+<label x="241.3" y="93.98" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="B_DOWN" class="0">
+<segment>
+<pinref part="U$1" gate="G$2" pin="PB7"/>
+<wire x1="233.68" y1="83.82" x2="241.3" y2="83.82" width="0.1524" layer="91"/>
+<label x="241.3" y="83.82" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="B_ESC" class="0">
+<segment>
+<pinref part="U$1" gate="G$2" pin="PB5"/>
+<wire x1="233.68" y1="81.28" x2="241.3" y2="81.28" width="0.1524" layer="91"/>
+<label x="241.3" y="81.28" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="B_RIGHT" class="0">
+<segment>
+<pinref part="U$1" gate="G$2" pin="PB8"/>
+<wire x1="170.18" y1="88.9" x2="162.56" y2="88.9" width="0.1524" layer="91"/>
+<label x="162.56" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -20304,6 +20354,7 @@ Rozwarte JP3 i JP4 jeśli zasilany z Discovery</text>
 <approved hash="104,2,116.84,162.56,U$1G$3,JP1_GND2,GND,,,"/>
 <approved hash="104,2,142.24,157.48,U$1G$3,JP2_GND1,GND,,,"/>
 <approved hash="104,2,142.24,154.94,U$1G$3,JP2_GND2,GND,,,"/>
+<approved hash="202,1,187.96,68.58,U$2,V6,,,,"/>
 <approved hash="104,1,139.7,40.64,U$3,V-,GND,,,"/>
 <approved hash="104,1,139.7,93.98,U$3,V+,VCC,,,"/>
 <approved hash="104,1,144.78,40.64,U$3,DGND,GND,,,"/>
@@ -20321,10 +20372,8 @@ Rozwarte JP3 i JP4 jeśli zasilany z Discovery</text>
 <approved hash="115,4,124.46,42.7905,OK,,,,,"/>
 <approved hash="115,4,152.4,42.7905,ESC,,,,,"/>
 <approved hash="115,3,123.523,74.5405,JP2,,,,,"/>
-<approved hash="115,3,109.609,67.6431,JP3,,,,,"/>
-<approved hash="115,3,109.609,90.5031,JP4,,,,,"/>
-<approved hash="115,3,109.22,85.3355,SJ1,,,,,"/>
-<approved hash="115,3,109.22,62.4755,SJ2,,,,,"/>
+<approved hash="115,3,114.689,67.6431,JP3,,,,,"/>
+<approved hash="115,3,114.3,62.4755,SJ2,,,,,"/>
 <approved hash="115,3,48.26,62.158,D2,,,,,"/>
 <approved hash="115,2,130.071,89.431,FRAME3,,,,,"/>
 <approved hash="115,1,130.071,89.431,FRAME4,,,,,"/>
