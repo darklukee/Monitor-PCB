@@ -196,7 +196,7 @@
 <pad name="P$98" x="53.34" y="2.54" drill="1.1" diameter="1.778" shape="octagon" rot="R270"/>
 <pad name="P$99" x="50.8" y="0" drill="1.1" diameter="1.778" shape="octagon" rot="R270"/>
 <pad name="P$100" x="53.34" y="0" drill="1.1" diameter="1.778" shape="octagon" rot="R270"/>
-<text x="58.42" y="0" size="1.778" layer="20" rot="R90">STM32F4DISCOVERY</text>
+<text x="58.42" y="0" size="1.778" layer="25" rot="R90">STM32F4DISCOVERY</text>
 <pad name="P$101" x="0" y="91.44" drill="1.1" diameter="1.778" shape="square"/>
 <pad name="P$102" x="53.34" y="91.44" drill="1.1" diameter="1.778" shape="square"/>
 <pad name="P$103" x="0" y="89.154" drill="1.1" diameter="1.778" shape="octagon"/>
@@ -22746,10 +22746,12 @@ Rozwarte JP3 i JP4 jeśli zasilany z Discovery</text>
 <approved hash="104,2,116.84,162.56,U$1G$3,JP1_GND2,GND,,,"/>
 <approved hash="104,2,142.24,157.48,U$1G$3,JP2_GND1,GND,,,"/>
 <approved hash="104,2,142.24,154.94,U$1G$3,JP2_GND2,GND,,,"/>
+<approved hash="104,1,205.74,91.44,U$2,VCC,N$32,,,"/>
 <approved hash="202,1,187.96,68.58,U$2,V6,,,,"/>
 <approved hash="104,1,139.7,40.64,U$3,V-,GND,,,"/>
-<approved hash="104,1,139.7,93.98,U$3,V+,VCC,,,"/>
+<approved hash="104,1,139.7,93.98,U$3,V+,N$31,,,"/>
 <approved hash="104,1,144.78,40.64,U$3,DGND,GND,,,"/>
+<approved hash="104,1,33.02,83.82,U$4G$9,VCC,N$27,,,"/>
 <approved hash="104,1,27.94,83.82,U$4G$9,VL,VDD,,,"/>
 <approved hash="104,4,71.12,55.88,DIS1,VDD,+5V,,,"/>
 <approved hash="104,4,73.66,55.88,DIS1,VSS,GND,,,"/>
