@@ -21212,7 +21212,7 @@ Wickmann</description>
 <part name="R9" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="R10" library="rcl" deviceset="R-EU_" device="R0805" value="100"/>
 <part name="P+7" library="supply1" deviceset="+5V" device=""/>
-<part name="F1" library="fuse" deviceset="FUSE" device="1206" value="1A"/>
+<part name="F1" library="fuse" deviceset="FUSE" device="1206" value="500m"/>
 <part name="D3" library="mgr_components" deviceset="SMBJ" device="" value="SMBJ6.8CA"/>
 <part name="R12" library="rcl" deviceset="R-EU_" device="R0805" value="330"/>
 <part name="R13" library="rcl" deviceset="R-EU_" device="R0805" value="330"/>
