@@ -568,8 +568,6 @@ Source: http://www.raystar-optronics.com/</description>
 <wire x1="-27.94" y1="30.48" x2="24.13" y2="30.48" width="0.127" layer="21"/>
 <wire x1="24.13" y1="30.48" x2="24.13" y2="34.29" width="0.127" layer="21"/>
 <wire x1="24.13" y1="34.29" x2="-27.94" y2="34.29" width="0.127" layer="21"/>
-<hole x="-34" y="32.5" drill="3.2"/>
-<hole x="34" y="32.5" drill="3.2"/>
 <hole x="34" y="-32.5" drill="3.2"/>
 <hole x="-34" y="-32.5" drill="3.2"/>
 </package>

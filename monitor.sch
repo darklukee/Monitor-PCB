@@ -964,8 +964,6 @@ Source: http://www.raystar-optronics.com/</description>
 <wire x1="-27.94" y1="30.48" x2="24.13" y2="30.48" width="0.127" layer="21"/>
 <wire x1="24.13" y1="30.48" x2="24.13" y2="34.29" width="0.127" layer="21"/>
 <wire x1="24.13" y1="34.29" x2="-27.94" y2="34.29" width="0.127" layer="21"/>
-<hole x="-34" y="32.5" drill="3.2"/>
-<hole x="34" y="32.5" drill="3.2"/>
 <hole x="34" y="-32.5" drill="3.2"/>
 <hole x="-34" y="-32.5" drill="3.2"/>
 </package>
@@ -21212,7 +21210,7 @@ Wickmann</description>
 <part name="R9" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="R10" library="rcl" deviceset="R-EU_" device="R0805" value="100"/>
 <part name="P+7" library="supply1" deviceset="+5V" device=""/>
-<part name="F1" library="fuse" deviceset="FUSE" device="1206" value="500m"/>
+<part name="F1" library="fuse" deviceset="FUSE" device="1206" value="1A"/>
 <part name="D3" library="mgr_components" deviceset="SMBJ" device="" value="SMBJ6.8CA"/>
 <part name="R12" library="rcl" deviceset="R-EU_" device="R0805" value="330"/>
 <part name="R13" library="rcl" deviceset="R-EU_" device="R0805" value="330"/>
@@ -21235,6 +21233,12 @@ Wickmann</description>
 <part name="R19" library="rcl" deviceset="R-EU_" device="R0603" value="1R"/>
 <part name="R20" library="rcl" deviceset="R-EU_" device="R0603" value="1R"/>
 <part name="R21" library="rcl" deviceset="R-EU_" device="R0603" value="1R"/>
+<part name="C17" library="rcl" deviceset="C-EU" device="C1206" value="10u"/>
+<part name="GND44" library="supply1" deviceset="GND" device=""/>
+<part name="C18" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C19" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="GND45" library="supply1" deviceset="GND" device=""/>
+<part name="GND46" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21264,7 +21268,7 @@ zależnie od funkcji i położenia na layout'cie</text>
 <instance part="J4" gate="G$1" x="177.8" y="152.4" rot="MR0"/>
 <instance part="GND20" gate="1" x="45.72" y="142.24" rot="R90"/>
 <instance part="R1" gate="G$1" x="116.84" y="129.54"/>
-<instance part="GND21" gate="1" x="88.9" y="129.54"/>
+<instance part="GND21" gate="1" x="88.9" y="121.92"/>
 <instance part="R2" gate="G$1" x="101.6" y="129.54"/>
 <instance part="R3" gate="G$1" x="101.6" y="142.24"/>
 <instance part="R4" gate="G$1" x="144.78" y="127" rot="R90"/>
@@ -21273,7 +21277,7 @@ zależnie od funkcji i położenia na layout'cie</text>
 <instance part="GND24" gate="1" x="165.1" y="58.42" rot="R90"/>
 <instance part="JP1" gate="B" x="147.32" y="144.78" rot="R270"/>
 <instance part="R6" gate="G$1" x="101.6" y="147.32"/>
-<instance part="D1" gate="G$1" x="86.36" y="139.7" rot="R90"/>
+<instance part="D1" gate="G$1" x="86.36" y="132.08" rot="R90"/>
 <instance part="T1" gate="G$1" x="182.88" y="60.96"/>
 <instance part="C1" gate="G$1" x="177.8" y="60.96"/>
 <instance part="VDD4" gate="G$1" x="27.94" y="91.44"/>
@@ -21298,7 +21302,7 @@ zależnie od funkcji i położenia na layout'cie</text>
 <instance part="GND42" gate="1" x="134.62" y="38.1"/>
 <instance part="FRAME4" gate="G$1" x="0" y="0"/>
 <instance part="F1" gate="G$1" x="58.42" y="144.78"/>
-<instance part="D3" gate="1" x="91.44" y="137.16" rot="R90"/>
+<instance part="D3" gate="1" x="91.44" y="132.08" rot="R90"/>
 <instance part="D4" gate="G$1" x="66.04" y="139.7" rot="R90"/>
 <instance part="R11" gate="G$1" x="66.04" y="129.54" rot="R90"/>
 <instance part="C16" gate="G$1" x="73.66" y="129.54"/>
@@ -21310,6 +21314,10 @@ zależnie od funkcji i położenia na layout'cie</text>
 <instance part="R19" gate="G$1" x="33.02" y="93.98" rot="R90"/>
 <instance part="R20" gate="G$1" x="139.7" y="104.14" rot="R90"/>
 <instance part="R21" gate="G$1" x="205.74" y="101.6" rot="R90"/>
+<instance part="C18" gate="G$1" x="165.1" y="124.46"/>
+<instance part="C19" gate="G$1" x="93.98" y="127"/>
+<instance part="GND45" gate="1" x="93.98" y="119.38"/>
+<instance part="GND46" gate="1" x="165.1" y="116.84"/>
 </instances>
 <busses>
 </busses>
@@ -21422,13 +21430,13 @@ zależnie od funkcji i położenia na layout'cie</text>
 </segment>
 <segment>
 <pinref part="GND21" gate="1" pin="GND"/>
-<wire x1="88.9" y1="132.08" x2="86.36" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="124.46" x2="86.36" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="86.36" y1="132.08" x2="86.36" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="132.08" x2="91.44" y2="132.08" width="0.1524" layer="91"/>
-<junction x="88.9" y="132.08"/>
+<wire x1="86.36" y1="124.46" x2="86.36" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="124.46" x2="91.44" y2="124.46" width="0.1524" layer="91"/>
+<junction x="88.9" y="124.46"/>
 <pinref part="D3" gate="1" pin="1"/>
-<wire x1="91.44" y1="132.08" x2="91.44" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="124.46" x2="91.44" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND43" gate="1" pin="GND"/>
@@ -21439,6 +21447,14 @@ zależnie od funkcji i położenia na layout'cie</text>
 <pinref part="T2" gate="1" pin="C"/>
 <wire x1="81.28" y1="134.62" x2="81.28" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="124.46" x2="73.66" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C19" gate="G$1" pin="2"/>
+<pinref part="GND45" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C18" gate="G$1" pin="2"/>
+<pinref part="GND46" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="SPI2_NSS" class="0">
@@ -21753,9 +21769,12 @@ zależnie od funkcji i położenia na layout'cie</text>
 <pinref part="J4" gate="G$1" pin="1"/>
 <wire x1="154.94" y1="154.94" x2="170.18" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="X4" gate="G$1" pin="1"/>
-<wire x1="170.18" y1="127" x2="154.94" y2="127" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="127" x2="165.1" y2="127" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="127" x2="154.94" y2="127" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="127" x2="154.94" y2="142.24" width="0.1524" layer="91"/>
 <junction x="154.94" y="142.24"/>
+<pinref part="C18" gate="G$1" pin="1"/>
+<junction x="165.1" y="127"/>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
@@ -21782,8 +21801,8 @@ zależnie od funkcji i położenia na layout'cie</text>
 <junction x="93.98" y="144.78"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="91.44" y1="144.78" x2="93.98" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="144.78" x2="86.36" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="144.78" x2="91.44" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="144.78" x2="86.36" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="144.78" x2="91.44" y2="137.16" width="0.1524" layer="91"/>
 <junction x="91.44" y="144.78"/>
 <pinref part="D3" gate="1" pin="2"/>
 <wire x1="93.98" y1="129.54" x2="93.98" y2="142.24" width="0.1524" layer="91"/>
@@ -21799,6 +21818,8 @@ zależnie od funkcji i położenia na layout'cie</text>
 <wire x1="81.28" y1="144.78" x2="66.04" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="139.7" x2="81.28" y2="144.78" width="0.1524" layer="91"/>
 <junction x="81.28" y="144.78"/>
+<pinref part="C19" gate="G$1" pin="1"/>
+<junction x="93.98" y="129.54"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -22193,9 +22214,9 @@ zależnie od funkcji i położenia na layout'cie</text>
 </net>
 <net name="B_ESC" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="PB5"/>
-<wire x1="233.68" y1="81.28" x2="241.3" y2="81.28" width="0.1524" layer="91"/>
-<label x="241.3" y="81.28" size="1.778" layer="95"/>
+<label x="241.3" y="76.2" size="1.778" layer="95"/>
+<wire x1="241.3" y1="76.2" x2="233.68" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$2" pin="PD6"/>
 </segment>
 </net>
 <net name="B_RIGHT" class="0">
@@ -22402,10 +22423,17 @@ Rozwarte JP3 i JP4 jeśli zasilany z Discovery</text>
 </plain>
 <instances>
 <instance part="DIS1" gate="G$1" x="53.34" y="78.74"/>
-<instance part="GND22" gate="1" x="73.66" y="53.34"/>
+<instance part="GND22" gate="1" x="73.66" y="53.34" smashed="yes">
+<attribute name="VALUE" x="73.66" y="53.34" size="1.778" layer="96" rot="R90"/>
+</instance>
 <instance part="GND27" gate="1" x="30.48" y="33.02"/>
-<instance part="P+6" gate="1" x="33.02" y="43.18" rot="R180"/>
-<instance part="R7" gate="G$1" x="33.02" y="50.8" rot="R90"/>
+<instance part="P+6" gate="1" x="33.02" y="33.02" smashed="yes" rot="R180">
+<attribute name="VALUE" x="33.02" y="33.02" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="R7" gate="G$1" x="33.02" y="50.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="34.0614" y="46.99" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="33.782" y="52.07" size="1.778" layer="96" rot="R90"/>
+</instance>
 <instance part="R8" gate="G$1" x="68.58" y="40.64" rot="R90"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="UP" gate="1" x="116.84" y="83.82" rot="R270"/>
@@ -22420,7 +22448,10 @@ Rozwarte JP3 i JP4 jeśli zasilany z Discovery</text>
 <instance part="GND31" gate="1" x="157.48" y="35.56"/>
 <instance part="GND32" gate="1" x="121.92" y="78.74"/>
 <instance part="GND33" gate="1" x="106.68" y="68.58"/>
-<instance part="Q1" gate="G$1" x="30.48" y="48.26"/>
+<instance part="Q1" gate="G$1" x="30.48" y="48.26" smashed="yes">
+<attribute name="NAME" x="25.4" y="50.8" size="1.778" layer="95"/>
+<attribute name="VALUE" x="15.24" y="53.34" size="1.778" layer="96"/>
+</instance>
 <instance part="R9" gate="G$1" x="25.4" y="40.64" rot="R90"/>
 <instance part="R10" gate="G$1" x="20.32" y="45.72"/>
 <instance part="P+7" gate="1" x="78.74" y="40.64" rot="R270"/>
@@ -22430,11 +22461,13 @@ Rozwarte JP3 i JP4 jeśli zasilany z Discovery</text>
 <instance part="R15" gate="G$1" x="106.68" y="66.04"/>
 <instance part="R16" gate="G$1" x="114.3" y="40.64"/>
 <instance part="R17" gate="G$1" x="142.24" y="40.64"/>
+<instance part="C17" gate="G$1" x="35.56" y="38.1" rot="R90"/>
+<instance part="GND44" gate="1" x="43.18" y="38.1" rot="R90"/>
 </instances>
 <busses>
 <bus name="LCD_D[0..7]">
 <segment>
-<wire x1="40.64" y1="50.8" x2="58.42" y2="50.8" width="0.762" layer="92"/>
+<wire x1="40.64" y1="45.72" x2="58.42" y2="45.72" width="0.762" layer="92"/>
 </segment>
 </bus>
 </busses>
@@ -22494,6 +22527,10 @@ Rozwarte JP3 i JP4 jeśli zasilany z Discovery</text>
 <wire x1="25.4" y1="35.56" x2="30.48" y2="35.56" width="0.1524" layer="91"/>
 <junction x="30.48" y="35.56"/>
 </segment>
+<segment>
+<pinref part="C17" gate="G$1" pin="2"/>
+<pinref part="GND44" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="N$6" class="0">
 <segment>
@@ -22505,84 +22542,84 @@ Rozwarte JP3 i JP4 jeśli zasilany z Discovery</text>
 <net name="!RST" class="0">
 <segment>
 <pinref part="DIS1" gate="G$1" pin="!RST"/>
-<wire x1="38.1" y1="53.34" x2="38.1" y2="55.88" width="0.1524" layer="91"/>
-<label x="38.1" y="50.8" size="1.778" layer="95" rot="R90"/>
+<wire x1="38.1" y1="45.72" x2="38.1" y2="55.88" width="0.1524" layer="91"/>
+<label x="38.1" y="45.72" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="LCD_D0" class="0">
 <segment>
 <pinref part="DIS1" gate="G$1" pin="DB0"/>
-<wire x1="58.42" y1="50.8" x2="58.42" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="45.72" x2="58.42" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LCD_D1" class="0">
 <segment>
 <pinref part="DIS1" gate="G$1" pin="DB1"/>
-<wire x1="55.88" y1="50.8" x2="55.88" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="45.72" x2="55.88" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LCD_D2" class="0">
 <segment>
 <pinref part="DIS1" gate="G$1" pin="DB2"/>
-<wire x1="53.34" y1="50.8" x2="53.34" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="45.72" x2="53.34" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LCD_D3" class="0">
 <segment>
 <pinref part="DIS1" gate="G$1" pin="DB3"/>
-<wire x1="50.8" y1="50.8" x2="50.8" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="45.72" x2="50.8" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LCD_D4" class="0">
 <segment>
 <pinref part="DIS1" gate="G$1" pin="DB4"/>
-<wire x1="48.26" y1="50.8" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="45.72" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LCD_D5" class="0">
 <segment>
 <pinref part="DIS1" gate="G$1" pin="DB5"/>
-<wire x1="45.72" y1="50.8" x2="45.72" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="45.72" x2="45.72" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LCD_D6" class="0">
 <segment>
 <pinref part="DIS1" gate="G$1" pin="DB6"/>
-<wire x1="43.18" y1="50.8" x2="43.18" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="45.72" x2="43.18" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LCD_D7" class="0">
 <segment>
 <pinref part="DIS1" gate="G$1" pin="DB7"/>
-<wire x1="40.64" y1="50.8" x2="40.64" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="45.72" x2="40.64" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LCD_E" class="0">
 <segment>
 <pinref part="DIS1" gate="G$1" pin="E"/>
-<wire x1="60.96" y1="55.88" x2="60.96" y2="50.8" width="0.1524" layer="91"/>
-<label x="60.96" y="50.8" size="1.778" layer="95" rot="R90"/>
+<wire x1="60.96" y1="55.88" x2="60.96" y2="45.72" width="0.1524" layer="91"/>
+<label x="60.96" y="45.72" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="LCD_R/!W" class="0">
 <segment>
 <pinref part="DIS1" gate="G$1" pin="R/!W"/>
-<wire x1="63.5" y1="55.88" x2="63.5" y2="50.8" width="0.1524" layer="91"/>
-<label x="63.5" y="50.8" size="1.778" layer="95" rot="R90"/>
+<wire x1="63.5" y1="55.88" x2="63.5" y2="45.72" width="0.1524" layer="91"/>
+<label x="63.5" y="45.72" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="LCD_CS2" class="0">
 <segment>
 <pinref part="DIS1" gate="G$1" pin="CS2"/>
-<wire x1="76.2" y1="55.88" x2="76.2" y2="50.8" width="0.1524" layer="91"/>
-<label x="78.74" y="50.8" size="1.778" layer="95" rot="R90"/>
+<wire x1="76.2" y1="55.88" x2="76.2" y2="45.72" width="0.1524" layer="91"/>
+<label x="76.2" y="45.72" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="LCD_CS1" class="0">
 <segment>
 <pinref part="DIS1" gate="G$1" pin="CS1"/>
-<wire x1="78.74" y1="55.88" x2="78.74" y2="50.8" width="0.1524" layer="91"/>
-<label x="81.28" y="50.8" size="1.778" layer="95" rot="R90"/>
+<wire x1="78.74" y1="55.88" x2="78.74" y2="45.72" width="0.1524" layer="91"/>
+<label x="78.74" y="45.72" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="B_LEFT" class="0">
@@ -22645,6 +22682,10 @@ Rozwarte JP3 i JP4 jeśli zasilany z Discovery</text>
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
 <pinref part="P+6" gate="1" pin="+5V"/>
+<wire x1="33.02" y1="35.56" x2="33.02" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="C17" gate="G$1" pin="1"/>
+<wire x1="33.02" y1="38.1" x2="33.02" y2="45.72" width="0.1524" layer="91"/>
+<junction x="33.02" y="38.1"/>
 </segment>
 <segment>
 <pinref part="DIS1" gate="G$1" pin="VDD"/>
@@ -22677,7 +22718,7 @@ Rozwarte JP3 i JP4 jeśli zasilany z Discovery</text>
 <segment>
 <pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="15.24" y1="45.72" x2="7.62" y2="45.72" width="0.1524" layer="91"/>
-<label x="7.62" y="45.72" size="1.778" layer="95"/>
+<label x="5.08" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -22734,8 +22775,8 @@ Rozwarte JP3 i JP4 jeśli zasilany z Discovery</text>
 <net name="LCD_D/I" class="0">
 <segment>
 <pinref part="DIS1" gate="G$1" pin="D/I"/>
-<label x="66.04" y="50.8" size="1.778" layer="95" rot="R90"/>
-<wire x1="66.04" y1="50.8" x2="66.04" y2="55.88" width="0.1524" layer="91"/>
+<label x="66.04" y="45.72" size="1.778" layer="95" rot="R90"/>
+<wire x1="66.04" y1="45.72" x2="66.04" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -22756,7 +22797,7 @@ Rozwarte JP3 i JP4 jeśli zasilany z Discovery</text>
 <approved hash="104,4,71.12,55.88,DIS1,VDD,+5V,,,"/>
 <approved hash="104,4,73.66,55.88,DIS1,VSS,GND,,,"/>
 <approved hash="115,1,147.32,146.181,JP1,,,,,"/>
-<approved hash="115,1,85.162,139.7,D1,,,,,"/>
+<approved hash="115,1,85.162,132.08,D1,,,,,"/>
 <approved hash="115,4,91.971,66.571,FRAME1,,,,,"/>
 <approved hash="115,3,91.971,66.571,FRAME2,,,,,"/>
 <approved hash="115,4,116.84,85.9705,UP,,,,,"/>
